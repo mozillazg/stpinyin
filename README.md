@@ -19,8 +19,9 @@ Install CLI tool:
 
 ```
 go get -u github.com/mozillazg/stpinyin/stpinyin
-$ stping "you1"
-yōu
+
+$ stpinyin you1 hang2
+yōu háng
 ```
 
 
@@ -49,3 +50,8 @@ func main() {
 	// Output: yōu
 }
 ```
+
+License
+---------
+
+Under the MIT License.
