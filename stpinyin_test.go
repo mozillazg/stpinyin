@@ -59,7 +59,7 @@ func TestConvert(t *testing.T) {
 		"mou2":  "móu",
 		"móu":   "móu",
 	} {
-		log.Printf("input %r, expect %r", input, expect)
+		log.Printf("input %v, expect %v", input, expect)
 		ret := Convert(input)
 		check(t, ret, expect)
 	}
@@ -108,7 +108,7 @@ func Test_fixNumberPosition(t *testing.T) {
 		"m":     "m",
 		"g3":    "g3",
 	} {
-		log.Printf("input %r, expect %r", input, expect)
+		log.Printf("input %v, expect %v", input, expect)
 		ret := fixNumberPosition(input)
 		check(t, ret, expect)
 	}
