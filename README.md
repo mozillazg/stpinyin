@@ -18,11 +18,14 @@ go get -u github.com/mozillazg/stpinyin
 Install CLI tool:
 
 ```
-go get -u github.com/mozillazg/stpinyin/stpinyin
+$ go get -u github.com/mozillazg/stpinyin/stpinyin
+
+or download from https://github.com/mozillazg/stpinyin/releases
 
 $ stpinyin you1 hang2
 yōu háng
 ```
+
 
 
 Documentation
