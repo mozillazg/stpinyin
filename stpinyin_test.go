@@ -107,6 +107,8 @@ func Test_fixNumberPosition(t *testing.T) {
 		"m2":    "m2",
 		"m":     "m",
 		"g3":    "g3",
+		"nv3":   "nv3",
+		"er3":   "e3r",
 	} {
 		log.Printf("input %v, expect %v", input, expect)
 		ret := fixNumberPosition(input)
