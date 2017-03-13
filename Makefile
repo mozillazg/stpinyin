@@ -11,3 +11,4 @@ lint:
 	gofmt -s -w . stpinyin
 	golint .
 	golint stpinyin
+	go vet
