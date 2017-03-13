@@ -72,18 +72,18 @@ var reToneNumber = regexp.MustCompile("^([^0-4]+)([0-4])$")
 // Convert implements you1 -> yōu
 func Convert(src string) (s string) {
 	s = fixNumberPosition(src)
-	has_tone := false
+	hasTone := false
 	for _, item := range toneMap {
 		key := item[0]
 		tone := item[1]
 		if strings.Contains(s, key) {
 			s = strings.Replace(s, key, tone, 1)
-			has_tone = true
+			hasTone = true
 			break
 		}
 	}
 	// 轻声
-	if !has_tone {
+	if !hasTone {
 		s = strings.Replace(s, "5", "", 1)
 	}
 	return s
