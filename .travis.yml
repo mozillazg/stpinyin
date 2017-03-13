@@ -23,4 +23,4 @@ script:
   - stpinyin abc
   - echo "abc" | stpinyin
   - echo "abc" > abc.txt && stpinyin < abc.txt
-  - $HOME/gopath/bin/goveralls -service=travis-ci
+  - $HOME/gopath/bin/goveralls -service=travis-ci -v -package .
