@@ -13,7 +13,7 @@ func check(t *testing.T, ret, expect string) {
 
 func TestVersion(t *testing.T) {
 	ret := Version()
-	check(t, ret, "0.1.0")
+	check(t, ret, "0.2.0")
 }
 
 func TestConvert(t *testing.T) {
